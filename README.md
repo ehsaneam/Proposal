@@ -1,8 +1,5 @@
-# Thesis Template
+# Sharif University of Technology, Electrical Engineering Ph.D. Thesis
 
-A LaTeX template for typesetting theses in Persian.
+My Ph.D. proposal written in persian LaTeX.
 
-By: Hamid Zarrabi-Zadeh
-
-## License
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+Feel free to use it as a template for your thesis too.
