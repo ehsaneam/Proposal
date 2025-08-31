@@ -12,9 +12,14 @@
 \subsection{اصول نسل چهارم صنعت}
 \subsection{روندها و نوآوری در نسل چهارم صنعت}
 \subsection{کاربردهای حساس به تاخیر در صنعت}
+\subsubsection{نیازمندی‌های کیفیت خدمت}
+\subsubsection{مثالی از آستانه‌ تاخیر در نسل چهارم صنعت}
 
 \section{پردازش لبه شبکه}
-\subsection{محاسبات لبه شبکه با دسترسی چندگانه}
+\subsection{معماری محاسبات لبه شبکه با دسترسی چندگانه}
+\subsubsubsection{محاسبه در لبه شبکه در برابر محاسبات ابری}
+\subsection{بارسپاری در لبه شبکه}
+\subsubsection{عوامل تصمیم‌گیری برای بارسپاری}
 \subsection{مجازی‌سازی در محاسبات لبه شبکه}
 \subsubsection{ماشین‌های مجازی}
 \subsubsection{حامل‌ها}
@@ -26,25 +31,30 @@
 \subsubsection{مزاحمت پردازنده}
 \subsubsection{مزاحمت حافظه}
 \subsubsection{مزاحمت شبکه}
-\subsection{مزاحمت ماشین‌های مجازی}
-\subsection{مزاحمت حامل‌ها}
+\subsection{مزاحمت با وجود مجازی‌سازی}
+\subsubsection{مزاحمت ماشین‌های مجازی}
+\subsubsection{مزاحمت حامل‌ها}
+\subsection{معیارهای اندازه‌گیری مزاحمت}
 \subsection{روش‌های ترمیم و کنترل مزاحمت}
+\subsubsection{روش‌های واکنشی}
+\subsubsection{روش‌های پیشگیرانه}
+\subsubsection{روش‌های کیفی کنترل مزاحمت}
+\subsubsection{روش‌های کمی کنترل مزاحمت}
+
 
 پرونده‌ی اصلی پایان‌نامه در قالب استاندارد\RTLfootnote{
 قالب استاندارد پایان‌نامه از نشانی
 \href{https://github.com/zarrabi/thesis-template}
 {github.com/zarrabi/thesis-template}
 قابل دریافت است.}
-\کد{thesis.tex}  نام دارد.
-به ازای هر فصل از پایان‌نامه، یک پرونده در شاخه‌ی \کد{chapters} ایجاد نموده
-و نام آن را در  \کد{thesis.tex} (در قسمت فصل‌ها) درج نمایید.
-برای مشاهده‌ی خروجی، پرونده‌ی \کد{thesis.tex} را با زی‌لاتک کامپایل کنید.
-مشخصات اصلی پایان‌نامه را می‌توانید در پرونده‌ی \کد{front/info.tex} ویرایش کنید.
-
-\subsection{عبارات ریاضی}
+\lr{\tt{thesis.tex}}  نام دارد.
+به ازای هر فصل از پایان‌نامه، یک پرونده در شاخه‌ی \lr{\tt{chapters}} ایجاد نموده
+و نام آن را در  \lr{\tt{thesis.tex}} (در قسمت فصل‌ها) درج نمایید.
+برای مشاهده‌ی خروجی، پرونده‌ی \lr{\tt{thesis.tex}} را با زی‌لاتک کامپایل کنید.
+مشخصات اصلی پایان‌نامه را می‌توانید در پرونده‌ی \lr{\tt{front/info.tex}} ویرایش کنید.
 
 برای درج عبارات ریاضی در داخل متن از \$...\$ و 
-برای درج عبارات ریاضی در یک خط مجزا از \$\$...\$\$ یا محیط \لر{equation} 
+برای درج عبارات ریاضی در یک خط مجزا از \$\$...\$\$ یا محیط \lr{equation} 
 استفاده کنید. برای مثال عبارت 
 $2x + 3y$
 در داخل متن و عبارت زیر
@@ -54,9 +64,6 @@ $2x + 3y$
 در یک خط مجزا درج شده است. 
 دقت کنید که تمامی عبارات ریاضی، از جمله متغیرهای تک‌حرفی مانند $x$ و $y$ باید در محیط ریاضی 
 یعنی محصور بین دو علامت \$ باشند. 
-
-
-\subsection{علائم ریاضی پرکاربرد}
 
 برخی علائم ریاضی پرکاربرد در زیر فهرست شده‌اند. 
 برای مشاهده‌ی دستور  معادل پرونده‌ی منبع را ببینید.
@@ -105,9 +112,6 @@ $\bigcup_{i=1}^{n} A_i, \bigcap_{i=1}^{n} A_i$
 $\infty, \emptyset, \forall, \exists, \triangle, \angle, \ell, \equiv, \therefore$
 \end{itemize}
 
-
-\subsection{لیست‌ها}
-
 برای ایجاد یک لیست‌ می‌توانید از محیط‌های «فقرات» و «enumerate» همانند زیر استفاده کنید.
 
 \begin{multicols}{2}
@@ -125,12 +129,9 @@ $\infty, \emptyset, \forall, \exists, \triangle, \angle, \ell, \equiv, \therefor
 
 \end{multicols}
 
-
-\subsection{درج شکل}
-
-یکی از روش‌های مناسب برای ایجاد شکل استفاده از نرم‌افزار \لر{LaTeX Draw} و سپس
-درج خروجی آن به صورت یک فایل \کد{tex} درون متن 
-با استفاده از دستور  \کد{fig} یا \کد{centerfig} است.
+یکی از روش‌های مناسب برای ایجاد شکل استفاده از نرم‌افزار \lr{LaTeX Draw} و سپس
+درج خروجی آن به صورت یک فایل \lr{\tt{tex}} درون متن 
+با استفاده از دستور  \lr{\tt{fig}} یا \lr{\tt{centerfig}} است.
 شکل~\ref{figure:vertex_cover} نمونه‌ای از اشکال ایجادشده با این ابزار را نشان می‌دهد.
 
 
@@ -142,7 +143,7 @@ $\infty, \emptyset, \forall, \exists, \triangle, \angle, \ell, \equiv, \therefor
 
 \bigskip
 همچنین می‌توانید با استفاده از نرم‌افزار \lr{Ipe} شکل‌های خود را مستقیما
-به صورت \لر{pdf} ایجاد نموده و آن‌ها را با دستورات \کد{img} یا  \کد{centerimg} 
+به صورت \lr{pdf} ایجاد نموده و آن‌ها را با دستورات \lr{\tt{img}} یا  \lr{\tt{centerimg}} 
 درون متن درج کنید. برای نمونه، شکل~\ref{figure:directional_graph} را ببینید.
 
 
@@ -151,9 +152,6 @@ $\infty, \emptyset, \forall, \exists, \triangle, \angle, \ell, \equiv, \therefor
 \caption{نمونه شکل ایجادشده توسط نرم‌افزار \lr{Ipe}}
 \label{figure:directional_graph}
 \end{figure}
-
-
-\subsection{درج جدول}
 
 برای درج جدول می‌توانید با استفاده از دستور  «جدول»
 جدول را ایجاد کرده و سپس با دستور  «لوح»  آن را درون متن درج کنید.
@@ -169,19 +167,15 @@ $\infty, \emptyset, \forall, \exists, \triangle, \angle, \ell, \equiv, \therefor
 \hline 
 \bf عملگر & \bf عنوان \\ 
 \hline \hline 
-\کد{<} & کوچک‌تر \\ 
-\کد{>} & بزرگ‌تر \\
-\کد{==} &  مساوی \\ 
-\کد{<>} & نامساوی \\ 
+\lr{\tt{<}} & کوچک‌تر \\ 
+\lr{\tt{>}} & بزرگ‌تر \\
+\lr{\tt{==}} &  مساوی \\ 
+\lr{\tt{<>}} & نامساوی \\ 
 \hline
 \end{tabular}
 
 \label{table:comparative_operators}
 \end{table}
-
-
-
-\subsection{درج الگوریتم}
 
 برای درج الگوریتم می‌توانید از محیط «الگوریتم» استفاده کنید.
 یک نمونه در الگوریتم~\ref{algorithm:greedy_vertex_cover} آمده است.
@@ -205,9 +199,6 @@ $\infty, \emptyset, \forall, \exists, \triangle, \angle, \ell, \equiv, \therefor
 \end{algorithmic}
 \end{algorithm}
 
-
-\subsection{محیط‌های ویژه}
-
 برای درج مثال‌ها، قضیه‌ها، لم‌ها و نتیجه‌ها به ترتیب از محیط‌های
 «مثال»، «قضیه»، «لم» و «نتیجه» استفاده کنید.
 برای درج اثبات قضیه‌ها و لم‌ها  از محیط «اثبات» استفاده کنید.
@@ -220,16 +211,9 @@ $\infty, \emptyset, \forall, \exists, \triangle, \angle, \ell, \equiv, \therefor
 وجود دارد که شامل حداقل دو کبوتر است.
 \end{تعریف}
 
-
-
-
-\section{برخی نکات نگارشی}
-
 این فصل حاوی برخی نکات ابتدایی ولی بسیار مهم در نگارش متون فارسی است. 
 نکات گردآوری‌شده در این فصل به‌ هیچ‌ وجه کامل نیست، 
 ولی دربردارنده‌ی حداقل مواردی است که رعایت آن‌ها در نگارش پایان‌نامه ضروری به نظر می‌رسد.
-
-\subsection{فاصله‌گذاری}
 
 \begin{enumerate}
 
@@ -244,9 +228,6 @@ $\infty, \emptyset, \forall, \exists, \triangle, \angle, \ell, \equiv, \therefor
  \item 
  اجزای فعل‌های مرکب با فاصله از یک‌دیگر نوشته می‌شوند، مانند: تحریر کردن، به سر آمدن.
 \end{enumerate}
-
-
-\subsection{شکل حروف}
 
 \begin{enumerate}
 
@@ -265,9 +246,6 @@ $\infty, \emptyset, \forall, \exists, \triangle, \angle, \ell, \equiv, \therefor
 
 \end{enumerate}
 
-
-\subsection{جدانویسی}
-
 \begin{enumerate}
 
 
@@ -284,7 +262,6 @@ $\infty, \emptyset, \forall, \exists, \triangle, \angle, \ell, \equiv, \therefor
 %\end{enumerate}
 %
 %
-%\subsection{جدانویسی مرجح}
 %
 %\begin{enumerate}
 
