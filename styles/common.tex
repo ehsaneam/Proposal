@@ -4,7 +4,7 @@
 % -------------------------------------------------------
 
 \usepackage{amssymb,amsmath}
-\usepackage[colorlinks,linkcolor=blue,citecolor=blue]{hyperref}
+\usepackage[colorlinks,linkcolor=black,citecolor=blue]{hyperref}
 \usepackage[usenames,dvipsnames]{pstricks}
 \usepackage{graphicx,subfigure,wrapfig}
 \usepackage{geometry}
@@ -14,8 +14,9 @@
 \usepackage[figureposition=bottom,tableposition=top,font={small,bf},labelfont=bf]{caption}
 \usepackage{algorithmicx,algorithm}
 \usepackage[extrafootnotefeatures]{xepersian}
-
+\usepackage{indentfirst}
 \usepackage[noend]{algpseudocode}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
 
 % -------------------- Page Layout --------------------
@@ -173,3 +174,5 @@ BoldFont=Sharif1.3-SemiBold,
 \newcommand{\centerimg}[2]
 	{\vspace{1em}\begin{center}\includegraphics[width=#2]{figs/#1}\end{center}\vspace{-1.5em}}
 
+% ------------------------------ references --------------------------
+\newcommand{\chapref}[1]{فصل~\ref{#1} -- \nameref{#1}}
