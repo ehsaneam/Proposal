@@ -5,6 +5,7 @@
 
 \usepackage{rotating}
 \usepackage{amssymb,amsmath}
+\usepackage{array} % for new column types
 \usepackage[colorlinks,linkcolor=black,citecolor=blue]{hyperref}
 \usepackage[usenames,dvipsnames]{pstricks}
 \usepackage{graphicx,subfigure,wrapfig}
@@ -141,6 +142,7 @@ BoldFont=Sharif1.3-SemiBold,
 \renewcommand{\ge}{\gee}
 
 \newcommand{\REM}[1]{}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}}
 
 % -------------------- Dictionary --------------------
 
@@ -176,3 +178,4 @@ BoldFont=Sharif1.3-SemiBold,
 
 % ------------------------------ references --------------------------
 \newcommand{\chapref}[1]{فصل~\ref{#1} -- \nameref{#1}}
+
